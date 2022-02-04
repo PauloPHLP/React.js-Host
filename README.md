@@ -22,7 +22,7 @@ A simple React.js Host application to test Micro Front-end concepts.
 
   `npm run start`
 
-- To run the application on a full Micro Front-end context, click <a href="https://github.com/PauloPHLP/React.js-Blue" target="__blank">here</a> and run the Blue application by following the instructions on the repository. Make sure to run the Blue application on `3001` door otherwise change the settings on `.env` file. After starting both apps, refresh the page of the Host application.
+- To run the application on a full Micro Front-end context, click <a href="https://github.com/PauloPHLP/React.js-Blue" target="__blank">here</a> and run the Blue application by following the instructions in the repository. Make sure to run the Blue application on `3001` door otherwise change the settings on `.env` file. After starting both apps, refresh the page of the Host application.
 
 ## 🚀️ Technologies
 
