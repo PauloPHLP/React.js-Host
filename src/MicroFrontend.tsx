@@ -1,15 +1,28 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-function MicroFrontend({ name, host }) {
+interface MicroFrontendProps {
+	name: string;
+	host: string;
+}
+
+function MicroFrontend({ name, host }: MicroFrontendProps) {
 	useEffect(() => {
 		const scriptId = `micro-frontend-script-${name}`;
 
+		const runWindowMethod = (methodName: string, param: string) => {
+			const windowMethod = (window as { [key: string]: any })[
+				methodName
+			] as Function;
+
+			windowMethod(param);
+		};
+
 		const mountMicroFrontend = () => {
-			window[`mount${name}`](`${name}-root`);
+			runWindowMethod(`mount${name}`, `${name}-root`);
 		};
 
 		const unmountMicroFrontend = () => {
-			window[`unmount${name}`] && window[`unmount${name}`](`${name}-root`);
+			runWindowMethod(`unmount${name}`, `${name}-root`);
 		};
 
 		if (document.getElementById(scriptId)) {
@@ -36,7 +49,7 @@ function MicroFrontend({ name, host }) {
 			});
 
 		return () => {
-			window[`unmount${name}`] && window[`unmount${name}`](`${name}-root`);
+			unmountMicroFrontend();
 		};
 	});
 

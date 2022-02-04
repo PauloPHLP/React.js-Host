@@ -7,7 +7,7 @@ const { REACT_APP_BLUE_HOST: blueHost } = process.env;
 function Blue() {
 	return (
 		<ContentWrapper>
-			<MicroFrontend host={blueHost} name="Blue" />
+			<MicroFrontend host={blueHost || ''} name="Blue" />
 		</ContentWrapper>
 	);
 }

@@ -4,7 +4,7 @@ import './index.css';
 function Header() {
 	const navigate = useNavigate();
 
-	const handleOnClick = (route) => {
+	const handleOnClick = (route: string) => {
 		navigate(route);
 	};
 

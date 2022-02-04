@@ -1,6 +1,8 @@
+import { RouteObject } from 'react-router';
+
 import Blue from '.';
 
-export const blueRoutes = [
+export const blueRoutes: RouteObject[] = [
 	{
 		path: '/blue',
 		element: <Blue />,
