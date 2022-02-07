@@ -6,7 +6,7 @@
 
 ## 🔎️ Description
 
-A simple React.js Host application to test Micro Front-end concepts.
+A simple React.js Host application to test Micro Front-end concepts and host other applications.
 
 ## 🛠️ Running the app
 
