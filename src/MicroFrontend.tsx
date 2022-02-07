@@ -10,11 +10,15 @@ function MicroFrontend({ name, host }: MicroFrontendProps) {
 		const scriptId = `micro-frontend-script-${name}`;
 
 		const runWindowMethod = (methodName: string, param: string) => {
-			const windowMethod = (window as { [key: string]: any })[
-				methodName
-			] as Function;
+			try {
+				const windowMethod = (window as { [key: string]: any })[
+					methodName
+				] as Function;
 
-			windowMethod(param);
+				if (windowMethod) windowMethod(param);
+			} catch (error) {
+				console.error(error);
+			}
 		};
 
 		const mountMicroFrontend = () => {
