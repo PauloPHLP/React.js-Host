@@ -20,6 +20,12 @@ function Header() {
 				>
 					Blue App
 				</button>
+				<button
+					className="tab-button red"
+					onClick={() => handleOnClick('/red')}
+				>
+					Red App
+				</button>
 			</div>
 		</div>
 	);

@@ -15,7 +15,7 @@ function MicroFrontend({ name, host }: MicroFrontendProps) {
 					methodName
 				] as Function;
 
-				if (windowMethod) windowMethod(param);
+				windowMethod(param);
 			} catch (error) {
 				console.error(error);
 			}
