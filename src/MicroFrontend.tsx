@@ -15,6 +15,8 @@ function MicroFrontend({ name, host }: MicroFrontendProps) {
 					methodName
 				] as Function;
 
+				if (!windowMethod) return;
+
 				windowMethod(param);
 			} catch (error) {
 				console.error(error);
@@ -39,17 +41,21 @@ function MicroFrontend({ name, host }: MicroFrontendProps) {
 		fetch(`${host}/asset-manifest.json`)
 			.then((res) => res.json())
 			.then((manifest) => {
-				const script = document.createElement('script');
+				Object.keys(manifest.files).map((key: string) => {
+					const script = document.createElement('script');
 
-				script.id = scriptId;
-				script.crossOrigin = '';
-				script.src = `${host}${manifest.files['main.js']}`;
+					if (!key.endsWith('.js')) return;
 
-				script.onload = () => {
-					mountMicroFrontend();
-				};
+					script.id = scriptId;
+					script.crossOrigin = '';
+					script.src = `${host}${manifest.files[key]}`;
 
-				document.head.appendChild(script);
+					script.onload = () => {
+						mountMicroFrontend();
+					};
+
+					document.head.appendChild(script);
+				});
 			});
 
 		return () => {
