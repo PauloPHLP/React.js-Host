@@ -1,5 +1,5 @@
 import { renderWithWrappers } from '../../_shared/test';
-import ContentWrapper from '.';
+import ContentWrapper from '../../components/ContentWrapper';
 
 describe('ContentWrapper', () => {
 	test('Renders ContentWrapper without crashing and with the correct properties and header', () => {

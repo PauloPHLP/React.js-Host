@@ -1,5 +1,5 @@
 import { renderWithWrappers } from '../../_shared/test';
-import Home from '.';
+import Home from '../../pages/Home';
 
 describe('Home', () => {
 	test('Renders Home without crashing and with the correct properties', () => {

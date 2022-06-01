@@ -1,5 +1,5 @@
 import { renderWithWrappers } from '../../_shared/test';
-import Header from '.';
+import Header from '../../components/Header';
 
 describe('Header', () => {
 	test('Renders Header without crashing', () => {

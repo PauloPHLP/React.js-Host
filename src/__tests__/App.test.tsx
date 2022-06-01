@@ -1,6 +1,6 @@
-import App from './App';
+import App from '../App';
 
-import { renderWithWrappers } from './_shared/test';
+import { renderWithWrappers } from '../_shared/test';
 
 describe('App', () => {
 	test('Renders App without crashing', () => {
