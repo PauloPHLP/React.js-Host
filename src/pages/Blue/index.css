@@ -1,3 +1,10 @@
 .blue-content-wrapper {
-	border-radius: 8px;
+  border-radius: 8px;
+}
+
+.container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
