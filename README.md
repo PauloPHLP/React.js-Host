@@ -6,7 +6,7 @@
 
 ## 🔎️ Description
 
-A React.js host application to be used in a Micro Front-end architecture.
+A React.js application to be used as a host on a Micro Front-end architecture.
 
 ## 🛠️ Running the app
 
