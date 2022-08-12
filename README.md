@@ -22,7 +22,7 @@ A React.js application to be used as a host on a Micro Front-end architecture.
 
   `npm run start`
 
-- To run the application on a full Micro Front-end context, click <a href="https://github.com/PauloPHLP/React.js-Blue" target="__blank">here</a> and run the Blue application and <a href="https://github.com/PauloPHLP/Vue.js-Red" target="__blank">here</a> to run the Red application by following the instructions in the repositories. Make sure to run the apps on the correct ports (`3001` for Blue and `8080` for Red) otherwise change the settings on `.env` file. After starting all the apps, refresh the Host app page.
+- To run the app on a full Micro Front-end context, click <a href="https://github.com/PauloPHLP/React.js-Blue" target="__blank">here</a> and run the Blue application and <a href="https://github.com/PauloPHLP/Vue.js-Red" target="__blank">here</a> to run the Red application by following the instructions in the repositories. Make sure to run the apps on the correct ports (`3001` for Blue and `8080` for Red) otherwise change the settings on `.env` file. After starting all the apps, refresh the Host app page.
 
 ## 🚀️ Technologies
 
