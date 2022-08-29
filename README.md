@@ -10,7 +10,7 @@ A simple React.js host application to test Micro Front-end concepts.
 
 ## 🛠️ Running the app
 
-- Clone this repository by typing the following command on your terminal:
+- Clone this repository by using the following command in your terminal:
 
   `git clone https://github.com/PauloPHLP/React.js-Host.git`
 
